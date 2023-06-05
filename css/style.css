@@ -1,0 +1,156 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Outfit", sans-serif;
+  background-color: hsl(217, 54%, 11%);
+}
+
+main {
+  margin: 40px 10px;
+  padding: 35px 25px;
+  border-radius: 12px;
+  background-color: hsl(217, 55%, 10%);
+}
+
+.container {
+  padding: 25px;
+  border-radius: 12px;
+  background-color: hsl(216, 50%, 16%);
+}
+
+.card-header {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.card-header img {
+  width: 100%;
+  display: block;
+}
+
+.img-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: hsla(178, 100%, 50%, 0.5);
+  display: none;
+}
+
+.img-overlay img {
+  position: absolute;
+  width: 50px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card-header:hover .img-overlay {
+  display: block;
+}
+
+.card-header .img-overlay img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card-title {
+  margin-top: 20px;
+  font-size: 20px;
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+  transition: color 0.3s;
+  cursor: pointer;
+}
+
+.card-title:hover {
+  color: hsl(178, 100%, 50%);
+}
+
+.card-subtitle {
+  margin: 20px auto;
+  font-size: 15px;
+  color: hsl(215, 51%, 70%);
+}
+
+.card-box {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid hsl(215, 51%, 70%);
+}
+
+.card-price {
+  display: flex;
+  align-items: center;
+  color: hsl(178, 100%, 50%);
+}
+
+.card-price > p {
+  padding-left: 7px;
+}
+
+.card-countdown {
+  display: flex;
+  align-items: center;
+  color: hsl(215, 51%, 70%);
+}
+
+.card-countdown > p {
+  padding-left: 7px;
+}
+
+.card-author {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+}
+
+.card-author > img {
+  height: 35px;
+  width: 35px;
+  margin-right: 15px;
+  border: 1px solid hsl(0, 0%, 100%);
+  border-radius: 50%;
+}
+
+.card-author > p {
+  color: hsl(215, 51%, 70%);
+}
+
+.card-author span {
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.card-author span:hover {
+  color: cyan;
+}
+
+@media (min-width: 992px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container {
+    max-width: 350px;
+  }
+  .card-title {
+    font-size: 22px;
+  }
+  .card-subtitle {
+    font-size: 18px;
+  }
+}/*# sourceMappingURL=style.css.map */
